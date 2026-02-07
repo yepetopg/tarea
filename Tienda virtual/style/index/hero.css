@@ -1,0 +1,65 @@
+.hero {
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.capaOscura {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(#03023a67, #0000008f, #000000ef) ;
+    position: absolute;
+    z-index: 1;
+}
+
+.textosHero {
+    color: #fff;
+    margin-left: 60px;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 100;
+}
+
+.textosHero button {
+    padding: 10px;
+    padding: 12px 6px;
+    background-color: transparent;
+    border-radius: 10px;
+    border: solid 2px #fff;
+    color: #fff;
+    font-size: 13px;
+    text-transform: uppercase;
+    margin-top: 17px;
+    transition: all 0.8s ease-in-out;
+}
+
+.textosHero button:hover {
+    background-color: #fff;
+    color: #000;
+    box-shadow: 1px 1px 20px 1px #fff;
+}
+
+.textosHero h1 {
+    letter-spacing: 4px;
+    font-size: 26px;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 15px #fff;
+}
+
+.textosHero p {
+    word-spacing: 5px;
+    line-height: 28px;
+    text-shadow: 2px 2px 15px #fff;
+}
+
+
+.heroBanner {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    background-image: url("../../image/19654464654_769a89ed49_b.jpg");
+    background-size: cover;
+    justify-content: end;
+}

@@ -1,0 +1,118 @@
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.75);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+.modalBox {
+  background: #0A0F1F;
+  color: #EAEAEA;
+  padding: 20px;
+  border-radius: 14px;
+  border: 1px solid #D4AF37;
+  box-shadow: 0 0 25px rgba(212,175,55,0.25);
+  max-width: 720px;
+  width: 90%;
+  position: relative;
+}
+
+.modalGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+#cerrarModal {
+  position: absolute;
+  top: 10px;
+  right: 12px;
+  background: transparent;
+  color: #D4AF37;
+  border: none;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.modalImgBox img {
+  width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.6);
+}
+
+.modalInfoBox h2 {
+  color: #D4AF37;
+  margin-bottom: 6px;
+}
+
+.modalInfoBox ul {
+  list-style: none;
+  padding: 0;
+}
+
+.modalInfoBox li {
+  margin: 4px 0;
+}
+
+.modalBtns {
+  margin-top: 10px;
+}
+
+#btnComprar {
+  background: #D4AF37;
+  color: #000;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#volverCatalogo {
+  background: transparent;
+  color: #EAEAEA;
+  border: 1px solid #EAEAEA;
+  padding: 7px 14px;
+  border-radius: 6px;
+  margin-left: 8px;
+}
+
+.oculto {
+  display: none;
+}
+
+.carritoPanel {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+
+.carritoBox {
+  background: #0A0F1F;
+  padding: 20px;
+  border-radius: 12px;
+  width: 320px;
+  color: #EAEAEA;
+  border: 1px solid #D4AF37;
+}
+
+.carritoItem {
+  display: flex;
+  justify-content: space-between;
+  margin: 8px 0;
+}
+
+.total {
+  margin-top: 10px;
+  color: #FFD65C;
+}
+
+.oculto {
+  display: none;
+}

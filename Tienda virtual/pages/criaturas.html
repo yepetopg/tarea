@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animales Fantasticos</title>
+    <link rel="icon" href="./image/Icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="../style/criaturas/criaturas.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+NZ+Basic:wght@100..400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="header">
+        <nav class="nav">
+            <img src="../image/Logo.png" alt="logo" class="logo">
+            <div class="menu">
+                <ul>
+                    <li><a href="../../index.html">Inicio</a></li>
+                    <li><a href="./Tienda virtual/pages/criaturas.html">Criaturas</a></li>
+                    <li><a href="../../web/html/index.html">Artefactos y pociones</a></li>
+                    <li><a href="../../catalogo/index.html">Atuendos Magicos</a></li>
+                </ul>
+            </div>
+            <img src="../image/shopping_cartB.png" alt="carrito" class="carrito">
+        </nav>
+    </header>
+    <section class="catalogo">
+        <div class="espacio"></div>
+        <div class="tituloCatalogo">
+            <h1>Catálogo de criaturas magicas</h1>
+            <p>Explora los seres más asombrosos del universo mágico</p>
+        </div>
+        <div class="cartsContainer">
+            <div class="producto">
+                <div class="productoInfo">
+                    <img src="../image/Hipogrifo_FB.webp" alt="hipogrifo" class="productoImg">
+                    <h2 class="productoTitle">Hypogrifo</h2>
+                    <p class="productoP">Criatura noble con cuerpo de león y cabeza de águila. Destaca por su fuerza,
+                        lealtad y orgullo</p>
+                    <button class="productoBoton" id="verCriatura">Ver Criatura</button>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="productoInfo">
+                    <img src="../image/Fenix_FB.webp" alt="hipogrifo" class="productoImg">
+                    <h2 class="productoTitle">Fénix Escarlata</h2>
+                    <p class="productoP">Ave legendaria que renace de sus cenizas. Símbolo de esperanza, fuego y
+                        renovación mágica</p>
+                    <button class="productoBoton" id="verCriatura">Ver Criatura</button>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="productoInfo">
+                    <img src="../image/Bola_de_fuego_chino_FB.webp" alt="hipogrifo" class="productoImg">
+                    <h2 class="productoTitle">Dragón de Fuego</h2>
+                    <p class="productoP">Bestia ancestral de enorme poder. Custodia tesoros y ruinas antiguas con
+                        aliento ardiente</p>
+                    <button class="productoBoton">Ver Criatura</button>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="productoInfo">
+                    <img src="../image/basilisco.jfif" alt="hipogrifo" class="productoImg">
+                    <h2 class="productoTitle">Basilisco</h2>
+                    <p class="productoP">Serpiente gigante cuya mirada es mortal. Habita en cámaras ocultas y túneles
+                        olvidados</p>
+                    <button class="productoBoton">Ver Criatura</button>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="productoInfo">
+                    <img src="../image/arana.webp" alt="hipogrifo" class="productoImg">
+                    <h2 class="productoTitle">Acromántula</h2>
+                    <p class="productoP">Araña colosal e inteligente. Vive en bosques oscuros y se comunica con los
+                        suyos en silencio</p>
+                    <button class="productoBoton">Ver Criatura</button>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="productoInfo">
+                    <img src="../image/Thestrals_WB_F5_ThestralCloseUpPortrait_Illust_100615_Port.webp" alt="hipogrifo"
+                        class="productoImg">
+                    <h2 class="productoTitle">Thestral</h2>
+                    <p class="productoP">Criatura alada esquelética visible solo para quienes han visto la muerte.
+                        Silenciosa y leal</p>
+                    <button class="productoBoton">Ver Criatura</button>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="productoInfo">
+                    <img src="../image/Niffler_FBCFTWW.webp" alt="hipogrifo" class="productoImg">
+                    <h2 class="productoTitle">Niffler</h2>
+                    <p class="productoP">Pequeña bestia traviesa con obsesión por objetos brillantes y tesoros mágicos
+                    </p>
+                    <button class="productoBoton">Ver Criatura</button>
+                </div>
+            </div>
+            <div class="producto">
+                <div class="productoInfo">
+                    <img src="../image/Kelpie_FBCFTWW.webp" alt="hipogrifo" class="productoImg">
+                    <h2 class="productoTitle">Kelpie</h2>
+                    <p class="productoP">Ser acuático cambiante que habita ríos y lagos encantados. Puede adoptar forma
+                        de caballo</p>
+                    <button class="productoBoton">Ver Criatura</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="modal oculto" id="modal">
+  <div class="modalBox modalGrid">
+    <button id="cerrarModal">✖</button>
+
+    <div class="modalImgBox">
+      <img id="modalImg" src="" alt="Criatura">
+    </div>
+
+    <div class="modalInfoBox">
+      <h2 id="modalTitulo"></h2>
+      <p id="modalDesc"></p>
+
+      <ul>
+        <li>🧬 Clase: <span id="modalClase"></span></li>
+        <li>🔥 Elemento: <span id="modalElemento"></span></li>
+        <li>⚠ Rareza: <span id="modalRareza"></span></li>
+      </ul>
+
+      <h3>Precio: <span id="modalPrecio"></span> 🪙</h3>
+
+      <div class="modalBtns">
+        <button id="btnComprar">Comprar Criatura</button>
+        <button id="volverCatalogo">Volver</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+    <section class="carritoPanel oculto" id="carritoPanel">
+  <div class="carritoBox">
+    <h2>🛒 Carrito Mágico</h2>
+    <div id="carritoItems"></div>
+    <p class="total">Total: <span id="totalPrecio">0</span> Galeones</p>
+    <button id="cerrarCarrito">Cerrar</button>
+  </div>
+</section>
+
+    <script src="../scripts/script.js"></script>
+</body>
+<script src="script.js"></script>
+
+</html>

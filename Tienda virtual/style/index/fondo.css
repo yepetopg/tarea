@@ -1,0 +1,12 @@
+:root {
+    --fondo: #0B132B;
+    --azul-noche: #1C1F3A;
+    --encabezado: #1C2541;
+    --dorado: #FFD700;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}

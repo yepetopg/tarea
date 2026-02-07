@@ -1,0 +1,107 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*--Titulos---*/
+
+.espacio {
+    height: 12vw;
+    width: 1px;
+}
+
+.tituloCatalogo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tituloCatalogo h1 {
+    color: var(--dorado);
+}
+
+.tituloCatalogo p {
+    color: var(--blanco-subtitulo);
+}
+
+/*---Tarjetas---*/
+
+.cartsContainer {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 400px;
+    gap: 18px;
+    margin: 20px;
+}
+
+.producto {
+    width: 95%;
+    height: 100%;
+    background-color: #1C2541;
+    border-radius: 14px;
+    box-shadow: 1px 1px 20px 1px #7069696c;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.8s ease-in-out
+}
+
+.productoInfo {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 0;
+}
+
+.productoImg {
+    width: 100%;
+    height: 50%;
+    border-radius: 10px 10px 0 0;
+}
+
+.productoTitle {
+    width: 100%;
+    font-size: 20px;
+    text-align: center;
+    color: var(--dorado-claro);
+    background-color: var(--dorado-clasico);
+    margin-bottom: 13px;
+}
+
+.productoP {
+    color: var(--blanco-descripcion);
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 15px;
+    line-height: 25px;
+}
+
+.productoBoton {
+    padding: 9px;
+    background-color: #D4AF37;
+    box-shadow: 1px 1px 20px 1px #6e5b1ccb;
+    color: #1A1A1A;
+    border-radius: 5px;
+    margin-top: 20px;
+    border: none;
+    margin-top: auto; 
+    margin-bottom: 20px;
+    transition: all 0.5s ease-in-out;
+}
+
+.productoBoton:hover {
+    background-color: #e0ddd2;
+    color: #1A1A1A;
+    box-shadow: 1px 1px 20px 1px #D4AF37;
+}
+
+.producto:hover {
+    transform: translateY(-17px);
+    box-shadow: 1px 1px 20px 1px #aaa8a8f1;
+}

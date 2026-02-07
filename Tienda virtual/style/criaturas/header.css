@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&display=swap');
+
+body {
+  font-family: "Cinzel Decorative", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+/*---logo---*/
+.logo {
+    margin: 15px;
+    height: 16vh;
+    width: 11vw;
+}
+
+/*---Nav---*/
+
+.nav {
+    background-color: var(--encabezado);
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 0 0 10px 10px;
+    box-shadow: 1px 1px 40px 30px #0000009f;
+    background: linear-gradient(#0B132B, #1C2541, #243B55);
+    z-index: 100;
+    position: fixed;
+    overflow-x:visible;
+}
+
+.nav a{
+    position: relative;
+    text-decoration: none;
+    color: #F4F1DE;
+    font-size: 15px;
+    padding: 7px;
+    border: 2px solid transparent;
+}
+
+
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.nav a:hover {
+    animation: hover 0.8s;
+    color: var(--dorado);
+    border-bottom: 2px solid var(--dorado);
+    border-radius: 10px;
+}
+
+
+/*---Carrito---*/
+
+.carrito {
+    margin: 15px;
+    margin-right: 30px;
+    width: 40px;
+    height: 40px;
+    scale: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.carrito:hover {
+    transform: scale(1.2);
+}
+
+@keyframes hover {
+    0% {
+        border-bottom: 2px solid var(--dorado);
+        border-radius: 10px;
+        color: var(--dorado);
+    }
+    12.5% {
+        border-bottom: 2px solid var(--dorado);
+        border-right: 2px solid var(--dorado);
+        border-radius: 10px;
+        color: var(--dorado);
+    }
+    25% {
+        border-right: 2px solid var(--dorado);
+        border-radius: 10px;
+        color: var(--dorado);
+    }
+    37.5% {
+        border-right: 2px solid var(--dorado);
+        border-top: 2px solid var(--dorado);
+        border-radius: 10px;
+        color: var(--dorado);
+    }
+    50% {
+        border-top: 2px solid var(--dorado);
+        border-radius: 10px;
+        color: var(--dorado);
+    }
+    62.5% {
+        border-top: 2px solid var(--dorado);
+        border-left: 2px solid var(--dorado);
+        border-radius: 10px;
+        color: var(--dorado);
+    }
+    75% {
+        border-left: 2px solid var(--dorado);
+        border-radius: 10px;
+        color: var(--dorado);
+    }
+    87.5% {
+        border-left: 2px solid var(--dorado);
+        border-bottom: 2px solid var(--dorado);
+        border-radius: 10px;
+        color: var(--dorado);
+    }
+    100% {
+        border-bottom: 2px solid var(--dorado);
+        border-radius: 10px;
+        color: var(--dorado);
+    }
+}
+

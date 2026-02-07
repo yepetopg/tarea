@@ -1,0 +1,28 @@
+@import "catalogo.css";
+@import "header.css";
+@import "modal.css";
+
+:root {
+    --fondo: #0B132B;
+    --azul-noche: #1C1F3A;
+    --encabezado: #1C2541;
+    --dorado: #E6C77A;
+    --blanco-subtitulo: #D1D5DB;
+    --dorado-claro: #F5E6B2;
+    --blanco-descripcion: #CBD5E1;
+    --dorado-clasico: #D4AF37;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: var(--fondo);
+}
+
+.oculto {
+    display: none;
+}
